@@ -30,7 +30,6 @@ function PostPaginated() {
             Previous
           </button>
         )}
-        {page}
         {paginatedQuery.data?.nextPage && (
           <button
             className="post-header-button"

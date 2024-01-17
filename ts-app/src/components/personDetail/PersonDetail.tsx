@@ -9,7 +9,8 @@ import {
 import { observer } from "mobx-react-lite";
 import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { getAllPerson, deletePerson } from "../../api/data";
+import { deletePerson } from "../../api/data";
+import { FiEdit } from "react-icons/fi";
 import "./PersonDetail.css";
 import { AiOutlineDelete } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -30,11 +31,6 @@ export const PersonDetail = observer(() => {
   const [page, setPage] = useState<any>(1);
 
   const queryClient = useQueryClient();
-
-  // const { data, isLoading, isError } = useQuery({
-  //   queryKey: ["person"],
-  //   queryFn: getAllPerson,
-  // });
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ["person", { page }],
@@ -87,9 +83,8 @@ export const PersonDetail = observer(() => {
               <p className="lname">{e.lastName}</p>
               <p className="dob">{e.dob}</p>
               <p className="action">
-                <FontAwesomeIcon
-                  style={{ fontSize: 30 }}
-                  icon={faPenSquare}
+                <FiEdit
+                  style={{ fontSize: 20 }}
                   onClick={() => {
                     console.log("edit");
                     person.setPersonDetail(e);
@@ -115,7 +110,6 @@ export const PersonDetail = observer(() => {
               Previous
             </button>
           )}
-          <p>{page}</p>
           {data?.nextPage && (
             <button
               className="post-header-button"

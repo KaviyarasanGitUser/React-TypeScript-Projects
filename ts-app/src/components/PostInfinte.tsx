@@ -21,7 +21,7 @@ export function PostInfinte() {
             <p>{e.body}</p>
           </div>
         ))}
-      <div>
+      <div className="page-button-container">
         {hasNextPage && (
           <button
             onClick={() => fetchNextPage()}
