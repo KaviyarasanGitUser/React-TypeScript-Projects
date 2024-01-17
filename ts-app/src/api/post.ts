@@ -36,6 +36,8 @@ export const getPaginatedPost = async(page: number | undefined) => {
           previousPage: page > 1 ? page - 1 : undefined,
           post: res.data,
         }
+        console.log(res);
+        
         return post
       }
     });

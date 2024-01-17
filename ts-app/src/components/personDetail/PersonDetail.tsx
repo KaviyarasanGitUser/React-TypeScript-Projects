@@ -7,7 +7,8 @@ import {
   keepPreviousData,
 } from "@tanstack/react-query";
 import { observer } from "mobx-react-lite";
-import { FiEdit } from "react-icons/fi";
+import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getAllPerson, deletePerson } from "../../api/data";
 import "./PersonDetail.css";
 import { AiOutlineDelete } from "react-icons/ai";
@@ -86,8 +87,9 @@ export const PersonDetail = observer(() => {
               <p className="lname">{e.lastName}</p>
               <p className="dob">{e.dob}</p>
               <p className="action">
-                <FiEdit
+                <FontAwesomeIcon
                   style={{ fontSize: 30 }}
+                  icon={faPenSquare}
                   onClick={() => {
                     console.log("edit");
                     person.setPersonDetail(e);
