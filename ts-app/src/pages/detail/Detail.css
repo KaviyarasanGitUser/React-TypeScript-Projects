@@ -1,0 +1,13 @@
+.person-detail-container{
+    margin: 2rem;
+}
+.create-new-project-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+.brightness{
+    filter: brightness(50%);
+    height: 75rem;
+}

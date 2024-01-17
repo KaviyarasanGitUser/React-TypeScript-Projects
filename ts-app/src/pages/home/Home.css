@@ -1,0 +1,83 @@
+.nav-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(169, 174, 183, 0.5) 0px 1px 2px 0px;
+  }
+
+ .home-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 1rem;
+}
+.header-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.todo-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .single-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230 245 248 / 90%);
+    box-shadow: rgb(92 146 155 / 50%) 1px 2px 2px 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    margin: 1rem;
+  }
+  
+  .check-box {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .todo-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .single-todo {
+      width: 31%;
+      margin:0.6rem
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width:1024px) {
+    .single-todo {
+      width: 47%;
+      margin:0.6rem
+    }
+  }
+  
+@media screen and (max-width:600px){
+    .nav-bar-container{
+    flex-direction: column;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+  }

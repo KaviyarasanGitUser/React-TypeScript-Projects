@@ -1,0 +1,14 @@
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 1rem;
+  }
+
+  .single-post{
+    background-color: rgb(230 245 248 / 90%);
+    box-shadow: rgb(92 146 155 / 50%) 1px 2px 2px 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    margin: 1rem;
+    padding: 1rem;
+  }

@@ -1,0 +1,22 @@
+.post-header-button{
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 10rem;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.post-header-button:hover{
+    border: 1px solid dodgerblue;
+    background-color: white;
+    color: dodgerblue;
+}
+
+
+  .component-container{
+    margin: 2rem;
+    /* border: 1px solid black; */
+  }

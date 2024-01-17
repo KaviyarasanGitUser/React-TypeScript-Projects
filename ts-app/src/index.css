@@ -5,8 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* border: 3px solid dodgerblue; */
+  width: 100vw;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width:768px){
+  body{
+    font-size: smaller;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

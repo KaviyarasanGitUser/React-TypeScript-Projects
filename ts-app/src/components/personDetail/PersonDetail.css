@@ -1,0 +1,61 @@
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(230 245 248 / 90%);
+    box-shadow: rgb(92 146 155 / 50%) 1px 2px 2px 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    margin: 0.5rem;
+    width: 90vw;
+}
+.email{
+    width: 30vw;
+    margin-left: 1rem;
+}
+.fname,
+.lname{
+    width: 25vw;
+}
+.dob{
+    width: 10vw;
+}
+.action{
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bold{
+    font-weight: 600;
+}
+.add-button-container{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-button{
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    float: right;
+}
+.add-button:hover{
+    color: dodgerblue;
+    background-color: white;
+    border: 1px solid dodgerblue;
+}
+.page-button-container{
+    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 1rem;
+}
