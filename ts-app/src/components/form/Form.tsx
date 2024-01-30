@@ -7,7 +7,6 @@ import "./Form.css";
 import { useNavigate } from "react-router-dom";
 
 const Form = observer(() => {
-
   const nav = useNavigate();
   const queryClient = useQueryClient();
 
@@ -104,7 +103,7 @@ const Form = observer(() => {
           className="submit-button"
           onClick={(e) => {
             person.isSubmit ? handleSubmit(e) : handleUpdate(e);
-            nav("/Integration/Detail")
+            nav("/Integration/Detail");
           }}
         >
           {person.isSubmit ? "Submit" : "Update"}
